@@ -17,6 +17,10 @@ If LAN discovery is blocked by the network or Windows Firewall, use:
 npm run dev:tunnel
 ```
 
+For the Android emulator, use `npm run android`. It forwards port `8082`
+through ADB and uses localhost, so changing Wi-Fi addresses cannot break the
+connection.
+
 The app works without credentials by showing its built-in ResQ map illustration. To use the native Google Maps view in a development build, copy `.env.example` to `.env`, add `EXPO_PUBLIC_GOOGLE_MAPS_API_KEY`, and rebuild the native app.
 
 All trips, drivers, payments, countdowns, and status changes are simulated locally.

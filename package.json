@@ -8,7 +8,7 @@
     "dev": "expo start --clear --lan --port 8082",
     "dev:localhost": "expo start --localhost --port 8082",
     "dev:tunnel": "expo start --tunnel --port 8082",
-    "android": "expo start --android",
+    "android": "adb reverse tcp:8082 tcp:8082 && expo start --clear --localhost --port 8082 --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit"
